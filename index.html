@@ -33,15 +33,15 @@
   <!-- MatrixCodeType is 3x3 because we have created a 3x3 marker before using the online tool  -->
   <a-scene embedded arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
     <a-assets>
-      <img src="https://cdn.jsdelivr.net/gh/ialesanco/DAW2@main/DIW/Tema%202/fitness/images/fflogo.png" id="my-image"
-        alt="No funciona">
+      <img id="my-image" src="https://cdn.jsdelivr.net/gh/ialesanco/DAW2@main/DIW/Tema%202/fitness/images/fflogo.png"
+        id="my-image" alt="No funciona">
     </a-assets>
 
 
     <a-image src="0.png" alt="Cero"></a-image>
 
     <a-marker type="barcode" value="0">
-      <a-entity gltf-model="#gltf"></a-entity>
+      <a-entity gltf-model="#my-image"></a-entity>
     </a-marker>
 
     <a-entity camera></a-entity>
